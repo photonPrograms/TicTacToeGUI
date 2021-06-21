@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta name = "viewport" content = "width = device-width, intitial-scale = 1.0">
+		<meta charset = "utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "css/header_style.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/aboutgame.css">
+		<link rel = "icon" type = "image/png" href = "images/favicon.png" >
+		<title>The Ultimate TicTacToe</title>
+	</head>
+	<body>
+		<h1>The Ultimate
+			<span id = "h1_special"><span id = "h1T">T</span>ic<span id = "h1T">T</span>ac<span id = h1T>T</span>oe<span></h1>
+		<nav id = "navbar">
+			<div id = "hamburger" class = "not_clicked" onclick = "this.classList.toggle('clicked')">
+				<div id = "bar1"></div>
+				<div id = "bar2"></div>
+				<div id = "bar3"></div>
+			</div>
+			<div class = "nav_menu">
+				<ul>
+					<li><a href = "index.html">Home</a><li>
+					<li><a href = "playmenu.html">Play</a></li>
+					<li class = "current_page"><a href = "#">About the Game</a></li>
+					<li><a href = "aboutdeveloper.html">Developer</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class = "info">
+			<div id = "game_text">
+				<h2>About This Game</h2>
+				<p>In a traditional game of tictactoe, two players fill a grid of 3 rows and 3 columns with their symbol (X or O), until the board is exhausted or one of the player a sequence of three symbols together. The sequence required to win contains theree like symbols horizontally, vertically, or diagonally.</p>
+				<p>My version of the game allows you to customize the grid by choosin the number of rows and columns. Also, you may choose the number of symbols to obtain the winning sequence.</p>
+				<p>Who plays first? Who chooses the symbol (X or O)? These questions will be settled by a random selection, akin to a toin coss.</p>
+			</div>
+		</section>
+		<div id = "push_footer"></div>
+		<footer>Created by Yash Gupta.</footer>		
+	</body>
+</html>

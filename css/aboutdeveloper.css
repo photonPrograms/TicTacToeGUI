@@ -1,0 +1,51 @@
+.info {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	background: rgba(255, 100, 100, 0.3);
+	font-family: "Verdana", sans-serif;
+}
+
+#dev_img {
+	background: rgba(150, 60, 240, 0.8);
+	background: url("../images/info_bkg.jpg");
+	text-align: center;
+	padding: 5px;
+}
+
+.info img {
+	width: 90%;
+	border: 2px groove rgb(0, 0, 0);
+	border-radius: 50%;
+}
+
+.info a {
+	color: rgb(20, 80, 80);
+	font-family: "Purisa", "Verdana";
+	text-decoration: none;
+}
+
+.info a:hover {
+	font-size: 1.25em;
+}
+
+@media screen and (min-width: 720px) {
+	.info {
+		display: inline-block;
+		width: 90%;
+	}
+
+	#dev_img {
+		display: inline-block;
+		width: 20%;
+		float: left;
+		margin: 0 5% 0 2%;
+	}
+
+	#dev_text {
+		display: inline-block;
+		float: left;
+		width: 60%;
+		margin: 0 5% 0 2%;
+	}
+}

@@ -1,0 +1,13 @@
+.info {
+	background: rgba(0, 0, 255, 0.2);
+	display: inline-block;
+	margin: auto 2% auto 2%;
+	width: 90%;
+	padding: 10px;
+	font-family: "Arial", sans-serif;
+}
+
+.info h2 {
+	font-family: "Ubuntu", "Purisa", cursive;
+	font-size: 2em;
+}

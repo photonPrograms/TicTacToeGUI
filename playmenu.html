@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta name = "viewport" content = "width = device-width, intitial-scale = 1.0">
+		<meta charset = "utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "css/header_style.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/playmenu.css">
+		<link rel = "icon" type = "image/png" href = "images/favicon.png" >
+		<title>The Ultimate TicTacToe</title>
+	</head>
+	<body>
+		<h1>The Ultimate
+			<span id = "h1_special"><span id = "h1T">T</span>ic<span id = "h1T">T</span>ac<span id = h1T>T</span>oe<span></h1>
+		<nav id = "navbar">
+			<div id = "hamburger" class = "not_clicked" onclick = "this.classList.toggle('clicked')">
+				<div id = "bar1"></div>
+				<div id = "bar2"></div>
+				<div id = "bar3"></div>
+			</div>
+			<div class = "nav_menu">
+				<ul>
+					<li><a href = "index.html">Home</a><li>
+					<li class = current_page><a href = "#">Play</a></li>
+					<li><a href = "aboutgame.html">About the Game</a></li>
+					<li><a href = "aboutdeveloper.html">Developer</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class = "play_option">
+			<a href = "play2.html">2 Players</a>
+			<p>Two players can play against each other on the same device with customizable board.</p>
+		</div>
+		<div class = "play_option">
+			<a href = "comingsoon.html">Play against computer: Easy</a>
+			<p>The computer will play against you a 3x3 TicTacToe, making random moves.</p>
+		</div>
+		<div class = "play_option">
+			<a href = "comingsoon.html">Play against computer: Hard</a>
+			<p>Play 3x3 TicTacToe against AI algorithm.<br>
+			<span id = "spoiler">Spoiler:</span> It is impossible to win.</p>
+		</div>
+		<div id = "push_footer"></div>
+		<footer>Created by Yash Gupta.</footer>		
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta name = "viewport" content = "width = device-width, intitial-scale = 1.0">
+		<meta charset = "utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "css/header_style.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/play2p.css">
+		<link rel = "icon" type = "image/png" href = "images/favicon.png" >
+		<title>The Ultimate TicTacToe</title>
+	</head>
+	<body>
+		<h1>The Ultimate
+			<span id = "h1_special"><span id = "h1T">T</span>ic<span id = "h1T">T</span>ac<span id = h1T>T</span>oe<span></h1>
+		<nav id = "navbar">
+			<div id = "hamburger" class = "not_clicked" onclick = "this.classList.toggle('clicked')">
+				<div id = "bar1"></div>
+				<div id = "bar2"></div>
+				<div id = "bar3"></div>
+			</div>
+			<div class = "nav_menu">
+				<ul>
+					<li class = "current_page"><a href = "#">Home</a><li>
+					<li><a href = "playmenu.html">Play</a></li>
+					<li><a href = "aboutgame.html">About the Game</a></li>
+					<li><a href = "aboutdeveloper.html">Developer</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id = "form" class = "visible">
+			<form>
+				Please enter the following fields to customize the game. Default values are filled in. All numeric are natural numbers. Names of players are non-empty strings<br><br>
+				<label for = "rows">Number of Rows: </label>
+				<input type = "text" id = "rows" name = "rows" required value = "3"><br>
+				<label for = "columns">Number of Columns: </label>
+				<input type = "text" id = "columns" name = "columns" required value = "3"><br>
+				<label for = "consec">Number of Consecutive Symbols to Win: </label>
+				<input type = "text" id = "consec" name = "consec" required value = "3"><br>
+				<label for = "player1">Player 1 Name</label>
+				<input type = "text" id = "player1" name = "player1" required value = "P1"><br>
+				<label for = "player2">Player 2 Name</label>
+				<input type = "text" id = "player2" name = "player2" required value = "P2"><br>
+				<span id = "rng_error" class = "error_msg">Input not in range: Please enter a natural number (0 not acceptable).</span><br>
+				<span id = "non_number" class = "error_msg">Input not a number: Please enter numbers only.</span>
+				<span id = "large_consec" class = "error_msg">Try more rows or columns or less consecutive symbols.</span>
+				<span id = "empty_name" class = "error_msg">Names should not be empty.</span>
+			</form>
+			<button type = "button" onclick = "dec = validate_names(); if (dec) { validate_form(); }">Submit</button><br>
+		</div>
+		<div id = "toss" class = "invisible">
+			<h2>Coin Toss</h2>
+			<button type = "button" id = "toss_coin" onclick = "toss_coin();">Toss the Coin &gt&gt</button><br>
+			<p id = "first_turn"></p>
+			<p id = "symbol"></p>
+			<button type = "button" id = "after_toss" onclick = "create_board(); create_stats()">Ok &gt&gt</button><br>
+		</div>
+		<div id = "board" class = "invisible"></div>
+		<div id = "stats" class = "invisible">
+			Moves made so far: <span id = "moves_stat"></span><br>
+			<span id = "curr_player_stat"></span> will move.</br>
+			<span id = "player1_name"></span>: <span id = "player1_sym"></span><br>
+			<span id = "player2_name"></span>: <span id = "player2_sym"></span><br>
+		</div>
+		<div id = "end" class = "invisible">
+			<h2>This game is <span id = "winner"></span></h2>
+		</div>
+		<div id = "push_footer"></div>
+		<footer>Created by Yash Gupta.</footer>
+		<script type = "text/javascript" src = "js/validation.js"></script>
+		<script type = "text/javascript" src = "js/toss.js"></script>
+		<script type = "text/javascript" src = "js/create_board.js"></script>
+		<script type = "text/javascript" src = "js/update_game.js"></script>
+		<script type = "text/javascript" src = "js/check_game_status.js"></script>
+	</body>
+</html>

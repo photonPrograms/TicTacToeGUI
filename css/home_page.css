@@ -1,0 +1,49 @@
+.gateway {
+	display: inline-block;
+	width: 80vw;
+	padding: 5px;
+	margin: auto auto;
+	clear: both;
+	position: relative;
+	left: 10vw;
+	border: 5px inset rgb(40, 40, 40);
+	border-radius: 10px;
+	background: rgba(40, 200, 40, 0.4);
+	overflow: visible;
+}
+
+.gateway a {
+	display: inline-block;
+	text-align: center;
+	background: rgb(110, 50, 230);
+	font-size: 1.25rem;
+	padding: 10px;
+	margin: 0 auto;
+	text-decoration: none;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-style: bold;
+	color: rgb(255, 255, 255);
+	font-family: "Chelsea Market", "Ubuntu", cursive;
+}
+
+.gateway a:hover {
+	background: rgb(100, 20, 100);
+	color: rgb(255, 100, 255);
+}
+
+.gateway p {
+	color: rgb(10, 10, 10);
+	font-family: cursive, sans-serif;
+}
+
+@media screen and (min-width: 500px) {
+	.gateway {
+		top: 10vh;
+	}
+
+	.gateway a {
+		position: relative;
+		left: 40%;
+	}
+}
